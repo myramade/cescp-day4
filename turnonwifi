@@ -1,0 +1,35 @@
+Bring up the wireless interface
+This is the host workstation's own wireless interface, switched into monitor mode so it can see the over-the-air attack traffic.
+	1	Open a native Linux terminal window on the workstation.
+	2	Bring the wireless interface down so you can change its state:
+
+
+   sudo ip link set wlan0 down
+
+	3	Switch the card into monitor mode, bring it back up, and lock it to the training router's channel. Channel 6 is only an example, so use your room's channel:
+
+
+   sudo iw wlan0 set monitor control
+   sudo ip link set wlan0 up
+   sudo iw dev wlan0 set channel 6
+
+If wlan0 is not your wireless interface, list your devices first and use the correct name everywhere wlan0 appears:
+
+
+iw dev
+
+C. Load the debug toolchain
+
+This is the OpenOCD bridge that talks to the target over SWD through the Debug Probe. It is the same toolchain Lab 4.1 uses to flash the hardened firmware.
+
+	1	Confirm OpenOCD reaches the target. Run it against the CMSIS-DAP interface and the RP2040 target:
+
+
+   sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 1000"
+
+A clean start shows the VID, the PID, and a valid DPIDR hash (for example, 0x0bc12477). That confirms the SWDIO and SWCLK lines are live.
+
+	2	When you flash in Lab 4.1, the toolchain runs at the faster adapter speed with the program command added on the end:
+
+
+   sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5000" -c "program secure_app.elf verify reset exit"
