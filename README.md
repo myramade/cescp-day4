@@ -11,7 +11,7 @@ he prototype now covers all five stops from Day 4, each built on the same intera
 Each has a plain-language intro + analogy, an attack-vs-defend toggle with a bespoke animated diagram, a terminal walkthrough where every command is explained as it runs (acronyms spelled out), a tap-to-expand breakdown of the moving parts, a weakness→fix panel, and a 3-question knowledge check. The bench hub ties it to the student's real rig (Maker Pi Pico + Pico WH + Debug Probe).
 Want this saved as a .md file in the project?
 
-Access [(https://myramade.github.io/cescp-day4)]
+Access [(https://myramade.github.io/cescp-day4/CESCP Day4 Secure Comms.html)]
 
 
 
