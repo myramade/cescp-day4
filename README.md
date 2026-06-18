@@ -8,10 +8,15 @@ he prototype now covers all five stops from Day 4, each built on the same intera
 - **RF** — refusing a wireless downgrade attack
 - **OTA (Module 12)** — signature check catching a tampered firmware image
 
-Each has a plain-language intro + analogy, an attack-vs-defend toggle with a bespoke animated diagram, a terminal walkthrough where every command is explained as it runs (acronyms spelled out), a tap-to-expand breakdown of the moving parts, a weakness→fix panel, and a 3-question knowledge check.
+Includes:
 
+Online Game Access [(https://myramade.github.io/cescp-day4/CESCP Day4 Secure Comms.html)]
 
-Access [(https://myramade.github.io/cescp-day4/CESCP Day4 Secure Comms.html)]
+Red/Team Blue Team Melee Lab (wireless - does not work on raspberry pi pico wh)
+
+Capstone
+  - Red team
+  - Blue Team
 
 
 
