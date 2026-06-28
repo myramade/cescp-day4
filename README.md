@@ -10,7 +10,7 @@ he prototype now covers all five stops from Day 4, each built on the same intera
 
 Includes:
 
-Online Game Access [(https://myramade.github.io/cescp-day4/CESCP Day4 Secure Comms.html)]
+Online Game Access [(https://myramade.github.io/cescp-day4/CESCP%20Day4%20Secure%20Comms.html)]
 
 Red/Team Blue Team Melee Lab (wireless - does not work on raspberry pi pico wh)
 
