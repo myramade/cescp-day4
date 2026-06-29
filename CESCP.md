@@ -8,7 +8,7 @@ This is interactive learning lesson for Cybersecurty for Embedded Systems covers
 - **OTA (Module 12)** — signature check catching a tampered firmware image
 
 
-Access webbased interactive learning here >>>  [(https://myramade.github.io/cescp-day4/CESCP%20Day4%20Secure%20Comms.html)]
+Access webbased interactive learning here >>>  [(https://myramade.github.io/cescp-day4/index.html)]
 
 
 
